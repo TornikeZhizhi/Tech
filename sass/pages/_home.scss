@@ -1,0 +1,143 @@
+
+.main_wrapper {
+
+	height: 100vh;
+	position: relative;
+}
+
+
+.header {
+
+	 background-color: #2368a2;
+	 padding: 15px 30px;
+	 display: flex;
+	 justify-content: space-between;
+
+   .header_logo {
+
+     a {
+     	 display: block;
+
+     	   img {
+
+     	   	  width: 80px;
+     	   }
+     }
+
+   }
+
+   .header_nav_wrapper {
+   	display: flex;
+   	align-items: center;
+   		nav {
+
+   			 ul {
+   			 	display: flex;
+
+   			 	 li {
+
+   			 	 	&:not(:last-child) {
+   			 	 		margin-right: 40px;
+   			 	 	}
+
+   			 	 	 a {
+
+   			 	 	 	color: #fff;
+   			 	 	 	font-family: $banneCaps;
+   			 	 	 	font-size: 14px;
+   			 	 	 }
+   			 	 }
+   			 }
+   		}
+   }
+
+   .book_box  {
+
+   	margin: 0 30px;
+
+   	  a {
+			color: #fff;
+   			font-family: $banneCaps;
+   			font-size: 14px;
+   			background-color:#1a4971;
+   			padding: 16px 28px;
+   			border-radius: 10px;
+   	  }
+   }
+
+   .language_box {
+   	display: flex;
+    align-items: center;
+    margin-left: 50px;
+   	  .flag_box {
+
+   	  		 img {
+   	  		 	width: 20px;
+   	  		 }
+   	  }
+
+   select {
+
+   		background-color:transparent;
+   		border:none;
+   		color: #fff;
+   		font-family: $banneCaps;
+   		font-size: 13px;
+   		cursor: pointer;
+   		margin-top: 3px;
+
+   	   option {
+   	   	color: #000;
+   	   }
+   }
+
+   }
+}
+
+
+.header_search_box {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header_search_box span {
+    line-height: 1px;
+    cursor: pointer;
+}
+.header_search_box span img {
+    width: 17px;
+}
+
+.header_search_box .search_bar {
+  	 position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 0px;
+    overflow: hidden;
+    transition: .4s;
+    transform: translateY(-50%);
+}
+
+.header_search_box .search_bar input {
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+    padding: 5px 5px;
+   	font-family: $banneCaps;
+    border-radius:5px;
+    font-size:12px
+}
+ .header_search_box .search_bar.active {
+    width: 200px;
+}
+
+.search_container {
+	width: 1000px;
+	margin:0 auto;
+	background-color: #000000b0;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
