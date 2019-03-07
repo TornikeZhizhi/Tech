@@ -30,3 +30,11 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+::-webkit-scrollbar-thumb {
+    background: #2368a2;
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}

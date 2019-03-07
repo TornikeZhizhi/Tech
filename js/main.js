@@ -3,18 +3,33 @@ $(document).ready(function(){
 	//Search
 	
 	var meF = 0;
-	$(".header_search_box span").on("click",function(){
+	$(".header_search_box span").on("click",function(e){
+		e.stopPropagation()
 		$(".search_bar").toggleClass("active");
 		if (meF == 0) {
 			$(this).find("img").attr("src","images/close_icon.png");
 			meF = 1;
 		}
-		else {
+		else if (meF == 1) {
+			$(".search_bar input").val(" ")
 			$(this).find("img").attr("src","images/search_icon.png");
 			meF = 0;
 		}
 	})
+	$(".search_bar input").click(function(e){
+		e.stopPropagation()
+	
+	})
 
+	$(window).click(function(){
+		$(".search_bar").removeClass("active");
+		$(".header_search_box span").
+		find("img").attr("src","images/search_icon.png");
+		$(".search_bar input").val(" ")
+		meF = 0;
+
+	
+	})
 
 	// Language
 
