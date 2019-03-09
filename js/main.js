@@ -45,6 +45,83 @@ $(document).ready(function(){
 	});
 
 
+// Company Slider
+
+$('.company_slider').owlCarousel({
+    loop:true,
+    margin:0,
+    dots:true,
+    touchDrag:false,
+    mouseDrag:false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    smartSpeed: 500,
+    responsive:{
+        0:{
+            items:3
+        },
+        690:{
+            items:3
+        },
+        992:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+})
+$('.internal_map_slider').owlCarousel({
+    loop:true,
+    margin:0,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    smartSpeed: 700,
+    responsive:{
+        0:{
+            items:2
+        },
+        690:{
+            items:2
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:2
+        }
+    }
+})
+
+
+
+// Calendar 
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+   $(function () {
+         $('#datetimepicker1').datetimepicker();
+      });
+
+
+   
+   	$(".book_img").click(function(){
+   		   $("#datetimepicker1").focus()
+   	})
+  
+
+
 
 
 })

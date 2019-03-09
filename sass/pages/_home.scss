@@ -469,10 +469,16 @@
 	 						h3 {
 
 	 							a {
-	 								color: #2368a2;
+	 								
+	 								    color: #34495e;
 	 							font-size: 24px;
 	 							font-family: $banneCaps;
 	 							    margin-bottom: 10px;
+	 							    transition: all .3s;
+
+	 							    &:hover{
+	 							    	color: #2368a2;
+	 							    }
 	 							}
 	 							
 	 						}
@@ -568,8 +574,8 @@
 						    position: absolute;
 						    bottom: 0;
 						    left: 0;
-						    height: 30%;
-						    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6),
+						    height: 20%;
+						    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7),
 						     rgba(0, 0, 0, 0));
 						    background-size: contain;
 						    z-index: 100;
@@ -603,5 +609,367 @@
 	 	background-color:#d9dce9;
 	 	margin: 0 auto;
 	 	width: 95%;
+	 }
+}
+
+.home_tech_date_fluid {
+
+	background-image:linear-gradient(rgba(0,104,178,.8),
+    rgba(0,104,178,.8)),url("../images/Layer-8.png");
+    background-position: center;
+    background-size: cover;
+	.row {
+
+		.home_map_fluid {
+			height: 100%;
+
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.col-md-6{ 
+			padding-right:0px;
+			padding-left:0px;
+
+			.tech_date_checker {
+
+				max-width: 375px;
+				margin: 0 auto;
+		
+
+				.car_category {
+
+					display: flex;
+					justify-content: space-between;
+
+					select {
+						font-family: "Conv_bpg_banner_caps";
+					    font-size: 14px;
+					    color: #858d95;
+					    width: 46%;
+					    border: 1px solid #d9dce9;
+					    border-radius: 5px;
+					    background-color: #fff;
+					    padding: 15px 5px 15px 12px;
+					}
+
+					button {
+						    font-family: "Conv_bpg_banner_caps";
+					    font-size: 14px;
+					    background-color: #f39c12;
+					    color: #2368a2;
+					    border-radius: 10px;
+					    display: inline-block;
+					    width: 46%;
+					}
+				}
+
+				.car_nubmer {
+
+					    margin-bottom: 15px;
+
+					input {
+					    font-family: "Conv_bpg_banner_caps";
+					    font-size: 14px;
+					    color: #858d95;
+					    width: 100%;
+					    margin-bottom: 10px;
+					    border: 1px solid #d9dce9;
+					    border-radius: 5px;
+					    background-color: #fff;
+					    padding: 14px 5px 14px 12px;
+					    text-align: center;
+
+					    &::placeholder {
+					    	 color: #858d95;
+					    }
+						
+					}
+				}
+			}
+
+
+			.home_tech_date_box {
+				max-width: 575px;
+				margin-left: auto;
+				padding: 45px 35px 80px 0;
+				    
+				.tech_date_tittle {
+					text-align: center;
+
+					 h3 {
+					 	font-size: 25px;
+					 	font-family:$banneCaps;
+					 	color: #fff;
+					 	margin-bottom: 10px;
+					 }
+
+					 p {
+					 	font-family: $arial;
+					 	font-size: 14px;
+					 	color: #fff;
+					 	text-align:justify;
+					 }
+				}
+			}
+
+		 }
+
+	}
+}
+
+
+.instution_fluid {
+    padding: 100px 15px;
+    background-color:#f4f6f9;
+
+	 .inst_title_box {
+	 	padding:0 75px;
+	 	display: flex;
+	 	justify-content: space-between;
+	 	margin-bottom: 50px;
+
+	 	  .inst_tittle {
+
+	 	  	 h3 {
+	 	  	 	color: #34495e;
+	 	  	 	font-family: $banneCaps;
+	 	  	 	font-size: 24px;
+	 	  	 }
+	 	  }
+
+
+	 	  .inst_readmore {
+
+	 	  	a {
+	 	  	 	font-family: $banneCaps;
+	 	  		font-size: 16px;
+	 	  		color: #dc3030;
+	 	  	}
+	 	  }
+	 }
+}
+
+.institution_row {
+	 .institution_box {
+	 	border-radius:10px;
+	 	overflow: hidden;
+
+	 	.instituion_bottom_content {
+	 		background-color:#fff;
+	 		padding: 20px 20px 20px 25px;
+
+	 		.institution_bottom_readmore {
+
+	 			display: flex;
+	 			justify-content: space-between;
+
+	 			.company_domein {
+	 				a {
+						color: #516a83;
+					    font-size: 16px;
+					    font-family: "Conv_BPG Arial 2010";
+	 				}
+	 			}
+
+	 			.company_readmore {
+	 				a {
+				    color: #fff;
+				    font-size: 16px;
+				    font-family: "Conv_BPG Arial 2010";
+				    background-color: #72b1e4;
+				    padding: 8px 27px;
+				    border-radius: 10px;
+				    display: inline-block;
+					 				}
+	 			}
+
+
+
+	 		}
+
+	 		.institution_bottom_info {
+	 			margin: 20px 0 15px;
+
+	 			.company_phone, .company_mail, .company_location {
+
+	 				span {
+	 					    color: #34495e;
+						    font-size: 13px;
+						    font-family: "Conv_BPG Arial 2010";
+						    margin-left: 10px;
+	 				}
+
+	 				div {
+	 					background-color: #f0f2f4;
+					    width: 35px;
+					    height: 35px;
+					    border: 1px solid #f0f2f4;
+					    background-clip: content-box;
+					    border-radius: 10px;
+					    padding: 2px;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+	 				}
+
+	 				    display: flex;
+					    align-items: center;
+					    margin-bottom: 5px
+	 			}
+
+	 		}
+
+	 		.instituion_bottom_tittle {
+						    text-align: center;
+
+	 			h3 {
+
+	 				a {
+							color: #34495e;
+						    font-size: 24px;
+						    font-family: "Conv_bpg_banner_caps";
+						    margin-bottom: 10px;
+						    transition: all .3s;
+						    &:hover {
+							color: #2368a2;
+						    	
+						    }
+	 				}
+	 			}
+	 		}
+	 	}
+
+
+	 	 .institution_img {
+					width: 100%;
+				    height: 250px;
+				    overflow: hidden;
+				    position: relative;
+
+				    .institution_img_content {
+				    	    position: absolute;
+					    bottom: 10px;
+					    left: 0;
+					    display: flex;
+					    justify-content: flex-start;
+					    align-items: flex-end;
+					    width: 100%;
+					    padding: 0 10px;
+					    z-index: 1000;
+
+					    .company_tabs_box {
+					    		   display: flex;
+
+					    	 .company_tabs {
+								    width: 30px;
+								    height: 30px;
+								    display: flex;
+								    align-items: center;
+								    justify-content: center;
+								    background-color: #fff;
+								    border-radius: 7px;
+								    span {
+								    	    font-family: "Conv_BPG Arial 2010";
+										    font-size: 15px;
+										    color: #34495e;
+										    text-transform: uppercase;
+									    }
+								    &:not(:last-child) {
+								    	margin-right: 5px;
+								    }
+					    	 }
+					    }
+
+					     .institution_logo {
+					     	   width: 90px;
+						    height: 90px;
+						    background-color:#fff;
+						    border-radius: 10px;
+						    display: flex;
+						    align-items: center;
+						    justify-content: center;
+						     margin-right: 10px;
+					     	 img {
+					     	 	 
+						        width: 80%;
+							    height: 80%;
+							    object-fit: contain;
+					     	 }
+					     }
+				    }
+	 	 	 a {
+	 	 	 	    display: block;
+				    width: 100%;
+				    height: 100%;
+	 	 	 	 img {
+					width: 100%;
+				    height: 100%;
+				    object-fit: cover;
+	 	 	 	 }
+	 	 	 }
+	 	 }
+	 }
+}
+
+
+.footer_fluid {
+
+	background-color:#f4f6f9;
+	padding-bottom: 100px;
+
+	 .container {
+
+	 	.social_row {
+	 		border-top:1px solid #d0d8df;
+	 		padding-top:15px;
+	 	}
+
+
+	 	.footer_nav {
+
+	 		 ul {
+	 		 	    display: flex;
+				    justify-content: space-between;
+				    padding: 15px 100px;
+	 		 	li {
+
+
+
+	 		 		a {
+	 		 			font-family: $arial;
+	 		 			font-size: 14px;
+	 		 			color: #516a83;
+	 		 		}
+
+	 		 	}
+	 		 }
+	 	}
+
+	 }
+
+
+	 .footer_social {
+
+	 	a {
+
+	 		display: inline-block;
+
+	 		&:not(:last-child){
+	 			margin-right: 10px;
+	 		}
+	 	}
+	 }
+
+	 .copyright {
+
+	 	text-align: center;
+	 	span {
+	 		font-family: $arial;
+	 		font-size: 14px;
+	 		color: #516a83;
+	 	}
 	 }
 }
