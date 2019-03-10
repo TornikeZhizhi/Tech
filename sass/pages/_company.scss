@@ -614,6 +614,7 @@ align-items:center;
   .blog_fluid {
 			background-color: #fff;
 			padding: 15px;
+			margin-bottom: 50px;
 
 			.blog_info_fluid {
 				    padding: 20px 0 30px;
@@ -700,3 +701,17 @@ align-items:center;
   }
 
 }
+
+.blog_nd_container .blog_fluid .blog_info_fluid .blog_readmore a {
+	border-radius: 0;
+	background-color: #fff;
+	transition: all .3s;
+	border:1px solid #72b1e4;
+	color: #34495e;
+}
+
+.blog_nd_container .blog_fluid .blog_info_fluid .blog_readmore a:hover {
+	background-color: #72b1e4;
+	color: #fff;
+}
+

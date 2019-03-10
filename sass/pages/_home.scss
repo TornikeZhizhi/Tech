@@ -244,6 +244,8 @@
   		border-radius:10px;
   		background-color:#f1f3f5;
   		overflow: hidden;
+  		flex: 0 0 95%;
+  		max-width: 400px;
   
 
 
@@ -267,7 +269,8 @@
   		 	 .search_tittle {
 
   		 	 	background-color:#2368a2;
-    			padding: 20px 85px;
+    			padding: 20px 0px;
+    			text-align: center;
 
   		 	 	  h2 {
   		 	 	  	font-size: 22px;
@@ -601,17 +604,16 @@
 
 .home_banner_fluid {
 	background-color:#fff;
-	 padding: 250px 0 50px;
-	 .home_banner_box {
+	 padding: 250px 0 0px;
+}
+.home_banner_box {
 
 	 	max-width: 800px;
 	 	height: 100px;
 	 	background-color:#d9dce9;
-	 	margin: 0 auto;
+	 	 margin: 0px auto 50px;
 	 	width: 95%;
 	 }
-}
-
 .home_tech_date_fluid {
 
 	background-image:linear-gradient(rgba(0,104,178,.8),
@@ -918,7 +920,7 @@
 .footer_fluid {
 
 	background-color:#f4f6f9;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 
 	 .container {
 
@@ -973,3 +975,13 @@
 	 	}
 	 }
 }
+
+.page-link {
+	font-family: $arial;
+	transition: .2s;
+
+	&:hover {
+		transform: translateY(-3px);
+	}
+}
+
