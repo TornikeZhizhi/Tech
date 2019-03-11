@@ -113,8 +113,6 @@ $('.internal_map_slider').owlCarousel({
    $(function () {
          $('#datetimepicker1').datetimepicker();
       });
-
-
    
    	$(".book_img").click(function(){
    		   $("#datetimepicker1").focus()

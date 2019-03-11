@@ -275,148 +275,153 @@ a:hover {
 
 .home_company_fluid {
   background-color: #d9dce9; }
-  .home_company_fluid .home_company_tittle {
-    text-align: center;
-    padding: 70px 0 60px; }
-    .home_company_fluid .home_company_tittle h2 {
-      color: #2368a2;
-      font-size: 48px;
-      font-family: "Conv_bpg_banner_caps"; }
-  .home_company_fluid .company_container .company_main_info_box {
-    position: relative; }
-    .home_company_fluid .company_container .company_main_info_box .company_bottom_info {
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      z-index: 100;
-      border: 1px solid #d9dce9;
-      border-radius: 0 0 10px 10px;
-      background-color: #fff;
-      padding: 20px 20px;
-      display: flex; }
-      .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_readmore_box {
-        margin-left: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_domein {
-          margin-bottom: 10px; }
-          .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_domein a {
-            color: #516a83;
-            font-size: 16px;
-            font-family: "Conv_BPG Arial 2010"; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_readmore a {
-          color: #fff;
+
+.home_company_tittle {
+  text-align: center;
+  padding: 70px 0 60px; }
+  .home_company_tittle h2 {
+    color: #2368a2;
+    font-size: 48px;
+    font-family: "Conv_bpg_banner_caps"; }
+
+.company_container .company_main_info_box {
+  position: relative; }
+  .company_container .company_main_info_box .company_bottom_info {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+    border: 1px solid #d9dce9;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 20px 20px;
+    display: flex; }
+    .company_container .company_main_info_box .company_bottom_info .company_readmore_box {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end; }
+      .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_domein {
+        margin-bottom: 10px; }
+        .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_domein a {
+          color: #516a83;
           font-size: 16px;
-          font-family: "Conv_BPG Arial 2010";
-          background-color: #72b1e4;
-          padding: 8px 27px;
-          border-radius: 10px;
-          display: inline-block; }
-      .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_phone, .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_mail {
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_phone div, .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_mail div {
-          background-color: #f0f2f4;
-          width: 35px;
-          height: 35px;
-          border: 1px solid #f0f2f4;
-          background-clip: content-box;
-          border-radius: 10px;
-          padding: 2px;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_phone span, .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_mail span {
-          margin-left: 10px; }
-      .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info {
-        margin-left: 20px; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info span {
-          color: #34495e;
-          font-size: 13px;
           font-family: "Conv_BPG Arial 2010"; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info .company_tittle h3 a {
-          color: #34495e;
-          font-size: 24px;
-          font-family: "Conv_bpg_banner_caps";
-          margin-bottom: 10px;
-          transition: all .3s; }
-          .home_company_fluid .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info .company_tittle h3 a:hover {
-            color: #2368a2; }
-      .home_company_fluid .company_container .company_main_info_box .company_bottom_info .compnay_bottom_logo {
-        width: 120px;
-        height: 120px;
-        border: 1px solid #f0f3f6;
+      .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_readmore a {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Conv_BPG Arial 2010";
+        background-color: #72b1e4;
+        padding: 8px 27px;
         border-radius: 10px;
+        display: inline-block;
+        transition: all .4s; }
+        .company_container .company_main_info_box .company_bottom_info .company_readmore_box .company_readmore a:hover {
+          background-color: #268de0; }
+    .company_container .company_main_info_box .company_bottom_info .company_phone, .company_container .company_main_info_box .company_bottom_info .company_mail {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px; }
+      .company_container .company_main_info_box .company_bottom_info .company_phone div, .company_container .company_main_info_box .company_bottom_info .company_mail div {
+        background-color: #f0f2f4;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #f0f2f4;
+        background-clip: content-box;
+        border-radius: 10px;
+        padding: 2px;
         display: flex;
         align-items: center;
         justify-content: center; }
-        .home_company_fluid .company_container .company_main_info_box .company_bottom_info .compnay_bottom_logo img {
-          width: 80%;
-          height: 80%;
-          object-fit: contain; }
-    .home_company_fluid .company_container .company_main_info_box .company_address_box {
-      position: absolute;
-      bottom: 10px;
-      left: 0;
+      .company_container .company_main_info_box .company_bottom_info .company_phone span, .company_container .company_main_info_box .company_bottom_info .company_mail span {
+        margin-left: 10px; }
+    .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info {
+      margin-left: 20px; }
+      .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info span {
+        color: #34495e;
+        font-size: 13px;
+        font-family: "Conv_BPG Arial 2010"; }
+      .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info .company_tittle h3 a {
+        color: #34495e;
+        font-size: 24px;
+        font-family: "Conv_bpg_banner_caps";
+        margin-bottom: 10px;
+        transition: all .3s; }
+        .company_container .company_main_info_box .company_bottom_info .company_bottom_title_info .company_tittle h3 a:hover {
+          color: #2368a2; }
+    .company_container .company_main_info_box .company_bottom_info .compnay_bottom_logo {
+      width: 120px;
+      height: 120px;
+      border: 1px solid #f0f3f6;
+      border-radius: 10px;
       display: flex;
-      justify-content: space-between;
-      width: 100%;
-      padding: 0 10px;
-      z-index: 1000; }
-      .home_company_fluid .company_container .company_main_info_box .company_address_box .company_addres_container {
+      align-items: center;
+      justify-content: center; }
+      .company_container .company_main_info_box .company_bottom_info .compnay_bottom_logo img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain; }
+  .company_container .company_main_info_box .company_address_box {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 1000; }
+    .company_container .company_main_info_box .company_address_box .company_addres_container {
+      display: flex;
+      align-items: flex-end; }
+    .company_container .company_main_info_box .company_address_box .company_tabs_box {
+      display: flex; }
+      .company_container .company_main_info_box .company_address_box .company_tabs_box .company_tabs {
+        width: 30px;
+        height: 30px;
         display: flex;
-        align-items: flex-end; }
-      .home_company_fluid .company_container .company_main_info_box .company_address_box .company_tabs_box {
-        display: flex; }
-        .home_company_fluid .company_container .company_main_info_box .company_address_box .company_tabs_box .company_tabs {
-          width: 30px;
-          height: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #fff;
-          border-radius: 7px; }
-          .home_company_fluid .company_container .company_main_info_box .company_address_box .company_tabs_box .company_tabs:not(:last-child) {
-            margin-right: 5px; }
-          .home_company_fluid .company_container .company_main_info_box .company_address_box .company_tabs_box .company_tabs span {
-            font-family: "Conv_BPG Arial 2010";
-            font-size: 15px;
-            color: #34495e;
-            text-transform: uppercase; }
-      .home_company_fluid .company_container .company_main_info_box .company_address_box .company_address_img {
-        margin-right: 15px; }
-      .home_company_fluid .company_container .company_main_info_box .company_address_box .company_cities a {
-        font-family: "Conv_BPG Arial 2010";
-        color: #fff;
-        font-size: 14px; }
-    .home_company_fluid .company_container .company_main_info_box .company_main_img {
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 7px; }
+        .company_container .company_main_info_box .company_address_box .company_tabs_box .company_tabs:not(:last-child) {
+          margin-right: 5px; }
+        .company_container .company_main_info_box .company_address_box .company_tabs_box .company_tabs span {
+          font-family: "Conv_BPG Arial 2010";
+          font-size: 15px;
+          color: #34495e;
+          text-transform: uppercase; }
+    .company_container .company_main_info_box .company_address_box .company_address_img {
+      margin-right: 15px; }
+    .company_container .company_main_info_box .company_address_box .company_cities a {
+      font-family: "Conv_BPG Arial 2010";
+      color: #fff;
+      font-size: 14px; }
+  .company_container .company_main_info_box .company_main_img {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative; }
+    .company_container .company_main_info_box .company_main_img:after {
       width: 100%;
-      height: 315px;
-      border-radius: 10px 10px 0 0;
-      overflow: hidden;
-      position: relative; }
-      .home_company_fluid .company_container .company_main_info_box .company_main_img:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 20%;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+      background-size: contain;
+      z-index: 100; }
+    .company_container .company_main_info_box .company_main_img a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .company_container .company_main_info_box .company_main_img a img {
         width: 100%;
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 20%;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-        background-size: contain;
-        z-index: 100; }
-      .home_company_fluid .company_container .company_main_info_box .company_main_img a {
-        display: block;
-        width: 100%;
-        height: 100%; }
-        .home_company_fluid .company_container .company_main_info_box .company_main_img a img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
+        height: 100%;
+        object-fit: cover; }
 
 .home_banner_fluid {
   background-color: #fff;
@@ -515,7 +520,8 @@ a:hover {
 
 .institution_row .institution_box {
   border-radius: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 35px; }
   .institution_row .institution_box .instituion_bottom_content {
     background-color: #fff;
     padding: 20px 20px 20px 25px; }
@@ -533,7 +539,10 @@ a:hover {
         background-color: #72b1e4;
         padding: 8px 27px;
         border-radius: 10px;
-        display: inline-block; }
+        display: inline-block;
+        transition: all .4s; }
+        .institution_row .institution_box .instituion_bottom_content .institution_bottom_readmore .company_readmore a:hover {
+          background-color: #268de0; }
     .institution_row .institution_box .instituion_bottom_content .institution_bottom_info {
       margin: 20px 0 15px; }
       .institution_row .institution_box .instituion_bottom_content .institution_bottom_info .company_phone, .institution_row .institution_box .instituion_bottom_content .institution_bottom_info .company_mail, .institution_row .institution_box .instituion_bottom_content .institution_bottom_info .company_location {
@@ -650,6 +659,22 @@ a:hover {
   transition: .2s; }
   .page-link:hover {
     transform: translateY(-3px); }
+
+.main_company_wrapper {
+  position: relative; }
+
+.center_readmore_row {
+  margin: 30px 0; }
+  .center_readmore_row .center_readmore_box {
+    text-align: center; }
+    .center_readmore_row .center_readmore_box a {
+      font-family: "Conv_bpg_banner_caps";
+      font-size: 16px;
+      color: #dc3030; }
+
+.low_center_section {
+  padding: 20px 15px;
+  background-color: #f4f6f9; }
 
 .company_fluid {
   width: 100%; }
