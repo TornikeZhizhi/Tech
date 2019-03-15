@@ -75,15 +75,15 @@ $('.internal_map_slider').owlCarousel({
     loop:true,
     margin:0,
     dots:true,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:5000,
     smartSpeed: 700,
     responsive:{
         0:{
-            items:2
+            items:1
         },
         690:{
-            items:2
+            items:1
         },
         992:{
             items:2

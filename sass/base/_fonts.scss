@@ -26,4 +26,13 @@ $dejavu :'Conv_BPG 2017 DejaVuSans';
 	font-style: normal;
 }
 
-$arial :'Conv_BPG Arial 2010';;
+$arial :'Conv_BPG Arial 2010';
+
+
+@font-face {
+	font-family: 'Conv_bpg_supersquare_2009';
+	src: url('../fonts/bpg_supersquare_2009.eot');
+	src: local('☺'), url('../fonts/bpg_supersquare_2009.woff') format('woff'), url('../fonts/bpg_supersquare_2009.ttf') format('truetype'), url('../fonts/bpg_supersquare_2009.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+};
