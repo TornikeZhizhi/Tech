@@ -120,6 +120,18 @@ $('.internal_map_slider').owlCarousel({
   
 
 
+//F.A.Q
+
+$(".faq_tittle h4").on("click",function(){
+	$(this).parent().next().slideToggle();
+	$(this).parent().prev().toggleClass("active");
+
+});
+$(".faq_right_line").on("click",function(){
+	$(this).parent().find(".faq_answer").slideToggle()
+	$(this).toggleClass("active");
+})
+
 
 
 })

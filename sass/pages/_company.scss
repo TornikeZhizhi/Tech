@@ -382,6 +382,50 @@ align-items:center;
 
 }
 
+.company_working_hours {
+	margin-top: 50px;
+	margin-left: 5px;
+	.working_hour_tittle {
+
+		span {
+			font-family: $arial;
+			font-weight: bold;
+			font-size: 17px;
+			color: #2c3e50;
+		}
+	}
+
+	.working_week_days {
+		margin-top: 15px;
+	}
+
+	.company_internal_text,.working_week_days {
+
+		 p,span {
+			font-family: $arial;
+			font-size: 14px;
+			color: #2c3e50
+		 }
+	}
+}
+
+.company_video_box {
+	margin-top: 50px;
+	width: 100%;
+	height: 450px;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+	
+
+
+
+
+
 .book_visit_box {
 	
 	
@@ -980,4 +1024,120 @@ align-items:center;
 
 		}
 	}
+}
+
+.blog_sw_section_fluid {
+
+	background-color: #f4f6f9;
+	padding: 50px 0 70px;
+
+	.container {
+		max-width: 900px;
+		margin-top: 40px;
+	}
+
+
+	 .blog_sw_main_img {
+
+	 	max-width: 1200px;
+	 	height: 520px;
+	 	margin: 0 auto;
+
+	 	  img {
+ 	  	width: 100%;
+	 	  	height: 100%;
+	 	  	object-fit: cover;
+	 	  }
+	 }
+
+	 .blog_sw_tittle {
+
+
+	 	 h2 {
+	 	 	color: #34495e;
+	 	 	font-family: $banneCaps;
+	 	 	font-size: 22px;
+	 	 }
+	 }
+
+	 .blog_swd_date {
+	 	display: flex;
+	 	margin: 25px 0 35px;
+
+
+				span {
+	 			 font-family: "Conv_BPG Arial 2010";
+				    color: #34495e;
+				    font-size: 14px;
+	 			}
+	 	.blog_category_tittle {
+
+	 		margin-left: 50px;
+	 		position: relative;
+	 		display: flex;
+   			 align-items: center;
+
+	 		&:after {
+	 			content:"";
+	 			position: absolute;
+	 			top: 50%;
+	 			transform: translateY(-50%);
+	 			left: -25px;
+	 			height: 14px;
+	 			width: 1px;
+	 			background-color: #34495e;
+
+	 		}
+
+	 	}
+
+	 	 .blog_date {
+	 	 	display: flex;
+    		align-items: center;
+
+
+	 	 	 span {
+	 	 	 	  
+				    margin-left: 7px;
+				    display: inline-block;
+	 	 	 }
+	 	 }
+
+	 }
+
+	 .blog_sw_text {
+
+	 	 p {
+	 	 	color: #34495e;
+	 	 	font-family: $arial;
+	 	 	font-size: 14px;
+	 	 }
+	 }
+
+	 .blog_social_box {
+	 	    margin-top: 140px;
+
+	 		.blog_social {
+	 			width: 45px;
+	 			height: 45px;
+	 			&:not(:last-child) {
+	 				margin-bottom:5px;
+	 			}
+
+	 			&:nth-child(1) {
+	 				background-color: #a7d3e9;
+	 			}
+	 			&:nth-child(2) {
+	 				background-color: #8c9fce;
+	 			}
+	 			&:nth-child(3) {
+	 				background-color: #719fd0;
+	 			}
+	 			&:nth-child(4) {
+	 				background-color: #d7dddd;
+	 			}
+	 		}
+
+	 }
+
 }
