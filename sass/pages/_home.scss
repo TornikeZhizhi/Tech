@@ -1,4 +1,6 @@
-
+body {
+	padding-top:101px;
+}
 .main_wrapper {
 
 	height: 100vh;
@@ -12,6 +14,17 @@
 	 padding: 15px 30px;
 	 display: flex;
 	 justify-content: space-between;
+	 position:fixed;
+	 left: 0;
+	 width: 100%;
+	 top: -121px;
+	 transition: all .4s;
+	 z-index: 5000;
+
+	 &.header_show {
+	 	top: 0;
+	 }
+
 
    .header_logo {
 

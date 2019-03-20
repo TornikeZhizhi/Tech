@@ -134,8 +134,24 @@ $(".faq_right_line").on("click",function(){
 
 
 
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	  	var currentScrollPos = window.pageYOffset;
+	  	if (prevScrollpos > currentScrollPos) {
+	    	$('.header').addClass('header_show');
+	  	} else {
+	    	$('.header').removeClass('header_show');
+	  	}
+	  	prevScrollpos = currentScrollPos;
+	};
+	
+
+
 })
 
+
+
+	
 
 
 

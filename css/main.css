@@ -57,6 +57,9 @@ a:hover {
   src: local("☺"), url("../fonts/bpg_supersquare_2009.woff") format("woff"), url("../fonts/bpg_supersquare_2009.ttf") format("truetype"), url("../fonts/bpg_supersquare_2009.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+body {
+  padding-top: 101px; }
+
 .main_wrapper {
   height: 100vh;
   position: relative; }
@@ -65,7 +68,15 @@ a:hover {
   background-color: #2368a2;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: -121px;
+  transition: all .4s;
+  z-index: 5000; }
+  .header.header_show {
+    top: 0; }
   .header .header_logo a {
     display: block; }
     .header .header_logo a img {
