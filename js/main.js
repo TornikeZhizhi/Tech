@@ -51,11 +51,15 @@ $('.company_slider').owlCarousel({
     loop:true,
     margin:0,
     dots:true,
-    touchDrag:false,
-    mouseDrag:false,
+    responsiveClass:true,
+    // touchDrag:false,
+    // mouseDrag:false,
     autoplay:true,
     autoplayTimeout:5000,
     smartSpeed: 500,
+    loop:true,
+    autoWidth:true,
+    items:4,
     responsive:{
         0:{
             items:3
@@ -71,6 +75,7 @@ $('.company_slider').owlCarousel({
         }
     }
 })
+
 $('.internal_map_slider').owlCarousel({
     loop:true,
     margin:0,
@@ -114,11 +119,6 @@ $('.internal_map_slider').owlCarousel({
          $('#datetimepicker1').datetimepicker();
       });
    
-   	$(".book_img").click(function(){
-   		   $("#datetimepicker1").focus()
-   	})
-  
-
 
 //F.A.Q
 
@@ -144,7 +144,20 @@ $(".faq_right_line").on("click",function(){
 	  	}
 	  	prevScrollpos = currentScrollPos;
 	};
-	
+
+
+ // svg 
+
+ 
+
+ function svg(k) {
+  for (var i = 0; i < k ; i++) {
+    $(".star_box svg polygon").eq(i).attr("class","svg1");
+  }
+ }
+var starPoint = Math.round(2.8);
+svg(starPoint)
+
 
 
 })
