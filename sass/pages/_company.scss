@@ -527,6 +527,16 @@ align-items:center;
 
 			 input {
 			 	width: 48% !important;
+
+			 	&::-webkit-inner-spin-button {
+			 	-webkit-appearance: none; 
+
+			 	}
+
+			 	&::-webkit-outer-spin-button {
+			 	-webkit-appearance: none; 
+
+			 	}
 			 }
 		}
 
@@ -540,72 +550,30 @@ align-items:center;
 	 width: 100%;
 	 height: 400px;
 	 position: relative;
-	 .internal_map_slider_fluid {
+	 display: flex;
 
-	 	position: absolute;
-	 	top: -50px;
-	 	left: 50%;
-	 	transform: translateX(-50%);
-	 	z-index: 100;
-	 	background-color: #2368a2;
-	 	border-radius: 10px;
-	 	padding: 30px 100px 10px 120px;
+	 #map {
 
-	 	    .internal_map_slider {
-
-	 	width: 800px;
-	 	margin:0 auto;
-
-	 	    }
-
-	 	.location_wrapper {
-	 		display: flex;
-	 		align-items: flex-start;
-
-	 		.owl_img_box{
-	 			 img {
-	 			 	width: 45px;
-	 			 }
-	 		}
-
-	 		 .location_info {
-	 		 	position: relative;
-	 		 	padding-left: 20px;
-
-	 		 	&:after{
-	 		 		content: "";
-				    position: absolute;
-				    top: -2px;
-				    left: 9px;
-				    width: 1px;
-				    height: 50px;
-	 		 		background-color: #fff;
-	 		 		z-index: 1;
-	 		 	}
-	 		 	.location_paragraph {
-	 		 		p {
-	 		 			color: #fff;
-	 		 			font-family: $arial;
-	 		 			font-size: 12px;
-	 		 			margin-bottom: 0;
-	 		 		}
-	 		 	}
-
-	 		 	.location_tittle {
-	 		 	
-	 		 		h4 {
-	 		 			color: #fff;
-	 		 			font-family: $arial;
-	 		 			font-size: 16px;
-	 		 		}
-	 		 	}
-	 		 }
-	 	}
-	 }
-	 iframe {
-	 	width: 100%;
+	 	flex:0 0 60%;
 	 	height: 100%;
 	 }
+	
+		.map_content {
+
+	 		flex:0 0 40%;
+	 		height: 100%;
+			background-color: #2368a2;
+			display: flex;
+			align-items: flex-start;
+
+			 .map_cities_wrapper {
+					
+				margin: 50px 0  0 50px;	
+			 }
+
+
+		}
+
 }
 
 

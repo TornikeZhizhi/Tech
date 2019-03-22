@@ -59,15 +59,7 @@
 					    ul {
   						margin-top: 10px;
 					    	li {
-
-
-					    		&:nth-child(even) a{
-					    			background-color:#1a4971;
-					    		}
-					    		&:nth-child(odd) a{
-					    			background-color:#4495d9;
-					    		}
-
+					    		border-bottom: 1px solid #fff;
 					    		
 					    		a {
 
@@ -75,10 +67,17 @@
 								    display: block;
 								    width: 100%;
 								    padding: 8px 10px;
-			   			 	 	 	font-size: 11px;
+			   			 	 	 	font-size: 13px;
+					    			background-color:#2368a2;
 			   			 	 	 
 			   			 	 	 	&:hover {
-			   			 	 	 		opacity:1;
+					    			background-color:#1a4971;
+			   			 	 	 	opacity:1;
+			   			 	 	 	}
+
+
+			   			 	 	 	&.drop_active {
+			   			 	 	 		background-color: #4495d9;
 			   			 	 	 	}
 					    		}
 					    	}
@@ -215,19 +214,29 @@
     overflow: hidden;
     transition: .4s;
     transform: translateY(-50%);
+    display: flex;
+
+    button {
+    	border: none;
+    	background-color: #1a4971;
+    	padding: 13px 17px;
+	    border-radius: 0 10px 10px 0;
+	    cursor: pointer;
+	    outline: none;
+    }
 }
 
 .header_search_box .search_bar input {
     background-color: #fff;
-    width: 100%;
+    width: calc(100% - 55px);
     outline: none;
     padding: 5px 5px;
    	font-family: $banneCaps;
-    border-radius:5px;
+    border-radius: 10px 0 0 10px;
     font-size:12px
 }
  .header_search_box .search_bar.active {
-    width: 200px;
+    width: 935px;
 }
 
 .search_container {
@@ -794,8 +803,13 @@
 }
 
 
+.center_search_box {
+	padding: 50px 0 30px;
+    background-color:#f4f6f9;
+}
+
 .instution_fluid {
-    padding: 100px 15px;
+    padding: 70px 15px;
     background-color:#f4f6f9;
 
 	 .inst_title_box {
@@ -1192,6 +1206,10 @@
 	.container {
 
 
+	}
+}
+
+
 		.center_search_wrapper{
 
 			.center_seach_tabs_fluid {
@@ -1256,17 +1274,16 @@
 
 
 
-	}
-}
 
 .contact_main_fluid,.error_main_fluid {
 	padding-top: 101px;
+	background-color: #f4f6f9;
 }
 
 
 .ask_fluid {
 
-background-color:#f4f6f9;
+
 
 .ask_container {
     max-width: 1100px;
@@ -1300,12 +1317,19 @@ background-color:#f4f6f9;
 				border-bottom:1px solid #cfd8e5;
    				 padding: 5px 0 10px;
    				 margin-top: 25px;
+
+
 				h4 {
    				 	cursor: pointer;
 					color: #34495e;
 					font-family: $banneCaps;
 					font-size: 16px;
 					display: inline-block;
+					transition: all .4s;
+				}
+
+				&.active h4 {
+					color: #2368a2;
 				}
 
 			}
