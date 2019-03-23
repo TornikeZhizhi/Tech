@@ -16,10 +16,11 @@ $(document).ready(function(){
 			meF = 0;
 		}
 	})
-	$(".search_bar input").click(function(e){
+	$(".search_bar").click(function(e){
 		e.stopPropagation()
 	
 	})
+
 
 	$(window).click(function(){
 		$(".search_bar").removeClass("active");
@@ -27,22 +28,55 @@ $(document).ready(function(){
 		find("img").attr("src","images/search_icon.png");
 		$(".search_bar input").val(" ")
 		meF = 0;
-
-	
 	})
 
+
+	 $('.search_bar input').keypress(function (e) {
+     var key = e.which;
+     if(key == 13) 
+      {
+        $('.search_bar button').click();  
+         }
+    });
+
+
+
+
 	// Language
+	$(".language_sh_wrapper").on("click",function(e){
+		$(".language_box_options_wrapper").fadeIn();
+		e.stopPropagation()
 
-	$('.language_box select').on('change', function(){
-	 	 var id = $(this).find(":selected").attr("id");
+	})
 
-	    if (id == "rus") {
-	    	$(".flag_box img").attr("src","images/flag_ru.svg")
-	    }else if (id == "geo"){
-	    	$(".flag_box img").attr("src","images/flag-geo.png")
-	    }
-	    
-	});
+	$(".language_box_options_wrapper .language_box_options").eq(0).on("click",function(){
+		var imageSource = $(this).find("img").attr("src");
+		$(".language_sh_wrapper img").attr("src",imageSource);
+		$(".language_sh_wrapper span").text("ქარ");
+		$(".language_box_options_wrapper").fadeOut();
+
+		$(".language_box_options").removeClass("active");
+		$(this).addClass("active");
+
+	})
+	$(".language_box_options_wrapper .language_box_options").eq(1).on("click",function(){
+		var imageSource = $(this).find("img").attr("src");
+		$(".language_sh_wrapper img").attr("src",imageSource);
+		$(".language_sh_wrapper span").text("ინგ");
+		$(".language_box_options_wrapper").fadeOut();
+
+		$(".language_box_options").removeClass("active");
+		$(this).addClass("active");
+
+	})
+
+	$(window).click(function(){
+		$(".language_box_options_wrapper").fadeOut();
+	})
+
+
+
+
 
 
 // Company Slider
@@ -98,6 +132,9 @@ $('.internal_map_slider').owlCarousel({
         }
     }
 })
+
+
+
 
 
 
@@ -166,7 +203,7 @@ $(".faq_right_line").on("click",function(){
 
 })
 
-
+// Map-------------------------------------------------------------------------------------
 
 var map;
  
@@ -356,14 +393,23 @@ var map;
           zoom: 9
         
         });
+
+		var icon = {
+		    url: "images/map_location.png", // url
+		    scaledSize: new google.maps.Size(20, 30), // scaled size
+		    origin: new google.maps.Point(0,0), // origin
+		    anchor: new google.maps.Point(0, 0) 
+		};
+
          map.setOptions({styles: style});
          
          var labels = '';
-        const imagePath = "http://test.dostoevsky.ge/icons8-marker-20.png";
+         const imagePath = icon;
          var locations = [
             {lat: 41.726977, lng: 44.758893},
             {lat: 41.7505208, lng: 44.6394107},
-            {lat: 41.7805208, lng: 44.6494107}
+            {lat: 41.7805208, lng: 44.6494107},
+            {lat: 42.257803, lng: 42.7458713}
           ]
           
           var infowindow = new google.maps.InfoWindow();
@@ -422,6 +468,59 @@ var map;
     window.onload = loadScript;
  
  
+
+
+// Modal 
+
+$(".book_box a").on("click",function(e){
+	e.preventDefault()
+    $(".all_modal").addClass("active");
+    $("body").addClass("scroll_y");
+});
+
+$(".system_link").eq(1).click(function(e){
+	e.preventDefault()
+    $(".all_modal").addClass("active");
+    $("body").addClass("scroll_y");
+})
+
+$(".modal_fluid").on("click",function(){
+   $(this).removeClass("active")
+   $("body").removeClass("scroll_y");
+
+
+	$(".home_modal .final_term_fluid").fadeIn();
+	$(".home_modal .book_visit_box").fadeOut();
+
+})
+
+$(".modal_container").on("click",function(e){
+    e.stopPropagation();
+})
+
+
+// Modal 
+
+
+$(".car_category span").click(function(){
+
+	$(".home_modal").addClass("active");
+	$("body").addClass("scroll_y");
+
+})
+
+$(".home_modal .final_term_box").click(function(){
+
+	$(".home_modal .final_term_fluid").fadeOut(100);
+	$(".home_modal .book_visit_box").delay(100).fadeIn();
+
+})
+
+
+
+// Modal 
+
+
 
 
 

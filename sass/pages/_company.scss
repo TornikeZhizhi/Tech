@@ -562,18 +562,62 @@ align-items:center;
 
 	 		flex:0 0 40%;
 	 		height: 100%;
-			background-color: #2368a2;
+			background-color: #465c7e;
 			display: flex;
 			align-items: flex-start;
 
 			 .map_cities_wrapper {
 					
 				margin: 50px 0  0 50px;	
+				overflow-y: scroll;
+   			     height: calc(100% - 100px);
+
+				.city {
+					display: flex;
+					align-items: flex-start;
+					max-width: 320px;
+					cursor: pointer;
+
+					&:not(:last-child){
+						margin-bottom: 20px;
+					}
+
+					.city_location_img {
+
+						img {
+							width: 60px;
+						}
+					}
+
+						.city_tittle {
+							margin-left: 10px;
+
+							h4 {
+								font-family: $banneCaps;
+								color: #fff;
+								font-size: 16px;
+
+							}
+
+
+							p {
+
+								color: #fff;
+								font-family: $arial;
+								font-size: 12px;
+
+							}
+						}
+				}
 			 }
 
 
 		}
 
+}
+
+.map_cities_wrapper::-webkit-scrollbar {
+	width: 1px;
 }
 
 
@@ -1132,3 +1176,4 @@ align-items:center;
 	 }
 
 }
+
