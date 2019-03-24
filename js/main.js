@@ -521,6 +521,28 @@ $(".home_modal .final_term_box").click(function(){
 // Modal 
 
 
+// Wow JS
+$(document).ready(function(){
+
+ wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+    
+        }
+      }
+    );
+    wow.init();
+
+
+
+})
+
+ 
+
+// Wow JS
+
 
 
 
